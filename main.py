@@ -256,7 +256,6 @@ class Board(QFrame):
             y = newY - newPiece.y(i)
             if x < 0 or x >= Board.BoardW or y < 0 or y >= Board.BoardH or [x, y] in self.a:
                 return False
-        print(newX, newY)
         self.curX = newX
         self.curY = newY
         self.update()
